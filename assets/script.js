@@ -20,7 +20,7 @@ botonOpera.forEach(function (boton) {
 });
 
 botonIgual.addEventListener('click', function () {
-    calcular();
+    calcularope();
     updateDisplay();
 });
 
@@ -39,28 +39,28 @@ function selectOperation(op) {
     opeActually = '';
 }
 
-function calcular() {
-    var calculo;
+function calcularope() {
+    var calculope;
     const before = parseFloat(opeBerofe);
     const actually = parseFloat(opeActually);
     if (isNaN(before) || isNaN(actually)) return;
     switch (operation) {
         case '+':
-            calculo = before + actually;
+            calculope = before + actually;
             break;
         case '-':
-            calculo = before - actually;
+            calculope = before - actually;
             break;
         case 'x':
-            calculo = before * actually;
+            calculope = before * actually;
             break;
         case '/':
-            calculo = before / actually;
+            calculope = before / actually;
             break;
         default:
             return;
     }
-    opeActually = calculo;
+    opeActually = calculope;
     operation = undefined;
     opeBerofe = '';
 }

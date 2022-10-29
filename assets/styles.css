@@ -4,7 +4,7 @@ body {
     background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 
-.calculadora-grill {
+.calculator-grill {
     display: grid;
     justify-content: center;
     align-content: center;
@@ -13,7 +13,7 @@ body {
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.calculadora-grill>button {
+.calculator-grill>button {
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid white;
@@ -39,6 +39,6 @@ body {
     text-align: right;
 }
 
-.calculadora-grill>button:hover {
+.calculator-grill>button:hover {
     background-color: rgba(255, 255, 255, .9);
 }
